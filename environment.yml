@@ -1,12 +1,13 @@
 name: ailab
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
-  - python>=3.10
+  - python=3.10
   - numpy
   - matplotlib
   - pandas
   - networkx
-  - ipykernel
   - jupyter
+  - ipykernel
+  - pip

@@ -1,0 +1,34 @@
+{
+  "suite_name": "City Router 2D Grid Benchmark (100 Maps)",
+  "generator": "Random Uniform Grid with Seed Range 0-99",
+  "grid_size": [
+    10,
+    15
+  ],
+  "wall_probability": 0.25,
+  "reachability_validation": "BFS Flood-Fill (فیلتر نقشه‌های بدون مسیر)",
+  "solvable_maps_found": 72,
+  "evaluated_algorithms": [
+    "BFS",
+    "DFS",
+    "A*"
+  ],
+  "performance_metrics": {
+    "steps_mean": {
+      "astar": 23.97,
+      "bfs": 23.58,
+      "dfs": 32.36
+    },
+    "traffic_cost_mean": {
+      "astar": 59.38,
+      "bfs": 69.43,
+      "dfs": 94.6
+    },
+    "expanded_nodes_mean": {
+      "astar": 96.83,
+      "bfs": 108.92,
+      "dfs": 57.33
+    }
+  },
+  "key_takeaway": "الگوریتم A* به دلیل هدایت هیوریستیک و در نظر گرفتن هزینه متغیر معابر، کمترین هزینه ترافیک کل را به دست آورد (کاهش ۱۴.۵ درصدی نسبت به BFS) و گره‌های کمتری نسبت به BFS باز کرد."
+}
